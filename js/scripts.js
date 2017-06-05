@@ -12,7 +12,7 @@ $(document).ready(function() {
     });
   });
 
-  alert(cardArray.toString());
-
-  
+  cardArray.forEach(function(card) {
+    $("ul#newCard").append('<li>' + card + '</li>');
+  });
 });
